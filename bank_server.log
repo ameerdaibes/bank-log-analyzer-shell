@@ -1,0 +1,61 @@
+[2026-08-15 08:07:33] [ERROR] [SESSION_1001] [unknown] [203.0.113.55] [AUTH] - Failed login attempt for user root (invalid password)
+[2026-08-15 08:07:35] [ERROR] [SESSION_1002] [unknown] [203.0.113.55] [AUTH] - Failed login attempt for user root (invalid password)
+[2026-08-15 08:07:40] [ERROR] [SESSION_1003] [unknown] [203.0.113.55] [AUTH] - Failed login attempt for user root (invalid password)
+[2026-08-15 08:10:12] [ERROR] [SESSION_1004] [unknown] [198.51.100.4] [AUTH] - Failed login attempt for user admin (invalid password)
+[2026-08-15 08:15:00] [INFO] [SESSION_1005] [teller01] [192.168.1.10] [QUERY] - Executed SELECT query on accounts table
+[2026-08-15 08:16:10] [INFO] [SESSION_1005] [teller01] [192.168.1.10] [QUERY] - Executed SELECT query on transactions table
+[2026-08-15 08:18:22] [INFO] [SESSION_1006] [admin] [192.168.1.15] [QUERY] - Executed UPDATE query on users table
+[2026-08-15 08:20:05] [INFO] [SESSION_1007] [system] [127.0.0.1] [QUERY] - Executed INSERT query into audit_log
+[2026-08-15 08:22:15] [WARN] [SESSION_1008] [teller02] [192.168.1.12] [QUERY] - Slow query detected: SELECT * FROM transactions executed in 4500ms
+[2026-08-15 08:25:40] [WARN] [SESSION_1009] [admin] [192.168.1.15] [QUERY] - Slow query detected: UPDATE accounts executed in 3200ms
+[2026-08-15 08:30:11] [WARN] [SESSION_1010] [manager01] [192.168.1.20] [QUERY] - Slow query detected: SELECT * FROM audit_logs executed in 6100ms
+[2026-08-27 10:00:00] [INFO] [SESSION_2001] [user01] [192.168.1.50] [TRANSACTION] - Deposit of $1500 processed successfully
+[2026-08-27 10:05:00] [INFO] [SESSION_2002] [user02] [192.168.1.51] [TRANSACTION] - Deposit of $250 processed successfully
+[2026-08-27 10:10:00] [INFO] [SESSION_2003] [user01] [192.168.1.50] [TRANSACTION] - Withdrawal of $100 processed successfully
+[2026-08-27 10:15:00] [INFO] [SESSION_2004] [user03] [192.168.1.52] [TRANSACTION] - Withdrawal of $400 processed successfully
+[2026-08-27 10:20:00] [WARN] [SESSION_2005] [user04] [192.168.1.53] [TRANSACTION] - Declined transaction for withdrawal of $2000
+[2026-08-27 10:25:00] [ERROR] [SESSION_2006] [system] [127.0.0.1] [TRANSACTION] - Rollback transaction executed for account 5510
+[2026-08-27 08:00:00] [INFO] [SESSION_1001] [admin] [192.168.1.10] [SYSTEM] - Daily backup started successfully
+[2026-08-27 08:05:00] [CRITICAL] [SESSION_1001] [admin] [192.168.1.10] [SYSTEM] - Backup failed: Disk space full
+[2026-08-27 09:12:00] [INFO] [SESSION_1002] [user01] [192.168.1.50] [TRANSACTION] - Deposit of $500 processed successfully
+[2026-08-27 09:30:00] [ERROR] [SESSION_1003] [system] [127.0.0.1] [TRANSACTION] - Rollback transaction executed for account 5510
+[2026-08-27 10:15:00] [WARN] [SESSION_1004] [sec_admin] [10.0.0.5] [SECURITY] - Authentication failure for user root
+[2026-08-27 09:00:00] [INFO] [SESSION_1001] [user01] [192.168.1.50] [AUTH] - User logged in
+[2026-08-27 09:05:00] [INFO] [SESSION_1002] [user02] [192.168.1.51] [AUTH] - User logged in
+[2026-08-27 09:10:00] [INFO] [SESSION_1001] [user01] [192.168.1.50] [TRANSACTION] - Deposit of $500
+[2026-08-27 09:20:00] [INFO] [SESSION_1001] [user01] [192.168.1.50] [AUTH] - User logged out
+[2026-08-27 09:00:00] [INFO] [SESSION_1001] [user01] [192.168.1.50] [AUTH] - User logged in
+[2026-08-27 09:05:00] [INFO] [SESSION_1002] [user02] [192.168.1.51] [AUTH] - User logged in
+[2026-08-27 09:20:00] [INFO] [SESSION_1001] [user01] [192.168.1.50] [AUTH] - User logged out
+[2026-08-27 08:00:00] [INFO] [SESSION_1001] [admin] [192.168.1.10] [SYSTEM] - Daily backup started successfully
+[2026-08-27 08:15:30] [ERROR] [SESSION_1002] [unknown] [203.0.113.55] [AUTH] - Failed login attempt for user root
+[2026-08-27 08:45:00] [WARN] [SESSION_1003] [teller01] [192.168.1.12] [QUERY] - Slow query detected: SELECT * FROM accounts
+[2026-08-27 09:00:00] [INFO] [SESSION_1004] [user01] [192.168.1.50] [AUTH] - User logged in
+[2026-08-27 09:10:00] [INFO] [SESSION_1004] [user01] [192.168.1.50] [TRANSACTION] - Deposit of $1500 processed successfully
+[2026-08-27 09:25:00] [INFO] [SESSION_1004] [user01] [192.168.1.50] [AUTH] - User logged out
+[2026-08-27 09:30:00] [INFO] [SESSION_1005] [user02] [192.168.1.51] [AUTH] - User logged in
+[2026-08-27 10:05:00] [INFO] [SESSION_1006] [manager01] [192.168.1.20] [AUTH] - User logged in
+[2026-08-27 10:15:00] [WARN] [SESSION_1006] [manager01] [192.168.1.20] [TRANSACTION] - Declined transaction for withdrawal of $5000
+[2026-08-27 10:45:00] [INFO] [SESSION_1006] [manager01] [192.168.1.20] [AUTH] - User logged out
+[2026-08-27 11:10:00] [CRITICAL] [SESSION_1007] [system] [127.0.0.1] [SYSTEM] - Backup failed: Disk space full
+[2026-08-28 00:01:00] [ERROR] [SESSION_3001] [unknown] [10.10.10.10] [AUTH] - Failed login attempt for user guest (invalid password)
+[2026-08-28 00:01:10] [ERROR] [SESSION_3002] [unknown] [10.10.10.10] [AUTH] - Failed login attempt for user guest (invalid password)
+[2026-08-28 00:01:20] [ERROR] [SESSION_3003] [unknown] [10.10.10.10] [AUTH] - Failed login attempt for user guest (invalid password)
+[2026-08-28 00:02:00] [ERROR] [SESSION_3004] [unknown] [10.10.10.11] [AUTH] - Failed login attempt for user admin (invalid password)
+[2026-08-28 00:02:10] [ERROR] [SESSION_3005] [unknown] [10.10.10.11] [AUTH] - Failed login attempt for user admin (invalid password)
+[2026-08-28 12:00:00] [INFO] [SESSION_3010] [admin] [192.168.1.15] [QUERY] - Executed DELETE query on audit_log table
+[2026-08-28 12:05:00] [WARNING] [SESSION_3011] [admin] [192.168.1.15] [QUERY] - Slow query detected: DELETE FROM audit_log executed in 7200ms
+[2026-08-28 12:06:00] [WARN] [SESSION_3012] [teller03] [192.168.1.30] [QUERY] - Slow query detected: SELECT * FROM customers
+[2026-08-28 13:00:00] [INFO] [SESSION_3020] [user05] [192.168.1.60] [TRANSACTION] - Deposit of $99.95 processed successfully
+[2026-08-28 13:05:00] [INFO] [SESSION_3021] [user05] [192.168.1.60] [TRANSACTION] - Withdrawal of $45.50 processed successfully
+[2026-08-28 13:10:00] [WARNING] [SESSION_3022] [user06] [192.168.1.61] [TRANSACTION] - Declined transaction for withdrawal of $9999
+[2026-08-28 13:15:00] [ERROR] [SESSION_3023] [system] [127.0.0.1] [TRANSACTION] - Rollback transaction executed for account 7001
+[2026-08-28 13:20:00] [CRITICAL] [SESSION_3024] [system] [127.0.0.1] [TRANSACTION] - Rollback transaction due to database failure
+[2026-08-28 13:25:00] [CRITICAL] [SESSION_3025] [system] [127.0.0.1] [BACKUP] - Backup failed: Storage device unavailable
+[2026-08-28 14:20:00] [INFO] [SESSION_3030] [auditor01] [192.168.1.70] [AUTH] - User logged out
+[2026-08-28 14:10:00] [INFO] [SESSION_3030] [auditor01] [192.168.1.70] [QUERY] - Executed SELECT query on audit_log table
+[2026-08-28 14:00:00] [INFO] [SESSION_3030] [auditor01] [192.168.1.70] [AUTH] - User logged in
+[2026-08-28 23:58:00] [INFO] [SESSION_3040] [nightuser] [192.168.1.80] [AUTH] - User logged in
+[2026-08-29 00:03:00] [INFO] [SESSION_3040] [nightuser] [192.168.1.80] [AUTH] - User logged out
+[2026-08-29 00:10:00] [INFO] [SESSION_3041] [activeuser] [192.168.1.81] [AUTH] - User logged in
+[2026-08-29 01:00:00] [INFO] [SESSION_3050] [system] [127.0.0.1] [BACKUP] - Daily backup completed successfully
